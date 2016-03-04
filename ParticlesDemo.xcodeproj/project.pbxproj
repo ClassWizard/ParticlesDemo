@@ -13,6 +13,8 @@
 		8381E2C51C8975C400F07819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8381E2C31C8975C400F07819 /* Main.storyboard */; };
 		8381E2C71C8975C400F07819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8381E2C61C8975C400F07819 /* Assets.xcassets */; };
 		8381E2CA1C8975C400F07819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8381E2C81C8975C400F07819 /* LaunchScreen.storyboard */; };
+		8381E2D41C897A2B00F07819 /* LWWeatherBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8381E2D31C897A2B00F07819 /* LWWeatherBackgroundView.m */; };
+		839B3F5D1C8988500099D46C /* weatherImg.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 839B3F5C1C8988500099D46C /* weatherImg.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		8381E2C61C8975C400F07819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8381E2C91C8975C400F07819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8381E2CB1C8975C400F07819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8381E2D21C897A2B00F07819 /* LWWeatherBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWWeatherBackgroundView.h; sourceTree = "<group>"; };
+		8381E2D31C897A2B00F07819 /* LWWeatherBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWWeatherBackgroundView.m; sourceTree = "<group>"; };
+		839B3F5C1C8988500099D46C /* weatherImg.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = weatherImg.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		8381E2B91C8975C400F07819 /* ParticlesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8381E2D11C8979E100F07819 /* LWWeatherBackgroundView */,
 				8381E2BD1C8975C400F07819 /* AppDelegate.h */,
 				8381E2BE1C8975C400F07819 /* AppDelegate.m */,
 				8381E2C01C8975C400F07819 /* ViewController.h */,
@@ -77,6 +83,16 @@
 				8381E2BB1C8975C400F07819 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8381E2D11C8979E100F07819 /* LWWeatherBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				839B3F5C1C8988500099D46C /* weatherImg.bundle */,
+				8381E2D21C897A2B00F07819 /* LWWeatherBackgroundView.h */,
+				8381E2D31C897A2B00F07819 /* LWWeatherBackgroundView.m */,
+			);
+			path = LWWeatherBackgroundView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +154,7 @@
 			files = (
 				8381E2CA1C8975C400F07819 /* LaunchScreen.storyboard in Resources */,
 				8381E2C71C8975C400F07819 /* Assets.xcassets in Resources */,
+				839B3F5D1C8988500099D46C /* weatherImg.bundle in Resources */,
 				8381E2C51C8975C400F07819 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +168,7 @@
 			files = (
 				8381E2C21C8975C400F07819 /* ViewController.m in Sources */,
 				8381E2BF1C8975C400F07819 /* AppDelegate.m in Sources */,
+				8381E2D41C897A2B00F07819 /* LWWeatherBackgroundView.m in Sources */,
 				8381E2BC1C8975C400F07819 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +316,7 @@
 				8381E2D01C8975C400F07819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
