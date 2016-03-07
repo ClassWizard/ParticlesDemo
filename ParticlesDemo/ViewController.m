@@ -11,24 +11,37 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) LWWeatherBackgroundView *weatherBackgroundView;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     self.view.backgroundColor = [UIColor blackColor];
     
-    LWWeatherBackgroundView *weatherBackgroundView = [[LWWeatherBackgroundView alloc] initWithFrame:self.view.bounds];
-    [weatherBackgroundView setWeatherCellModel:WeatherCellModeRain];
-    [self.view addSubview:weatherBackgroundView];
+    self.weatherBackgroundView = [[LWWeatherBackgroundView alloc] initWithFrame:self.view.bounds];
+    //也可以之后再设置frame
+//    self.weatherBackgroundView = [[LWWeatherBackgroundView alloc] init];
+//    self.weatherBackgroundView.frame = CGRectMake(0, 20, self.view.bounds.size.width, 500);
+    
+    [self.weatherBackgroundView setWeatherCellModel:WeatherCellModeRain];
+    [self.view addSubview:self.weatherBackgroundView];
+    [self.view sendSubviewToBack:self.weatherBackgroundView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)segmentValueDidChanged:(UISegmentedControl *)sender {
+    switch (sender.selectedSegmentIndex) {
+        case 0:
+            [self.weatherBackgroundView setWeatherCellModel:WeatherCellModeRain];
+            break;
+        case 1:
+            [self.weatherBackgroundView setWeatherCellModel:WeatherCellModeSnow];
+            break;
+        default:
+            break;
+    }
 }
-
 @end
