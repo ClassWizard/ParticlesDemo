@@ -6,6 +6,11 @@ A Demo for CAEmitterLayer and CAEmitterCell
 
 一个关于CAEmitterLayer和CAEmitterCell的Demo
 
+## Display Type Visual Examples
+----
+### Demo
+![Demo](http://recordit.co/RSTlv2Xs9z.gif)
+
 ##Usage
 ---
 
